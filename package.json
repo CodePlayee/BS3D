@@ -1,0 +1,139 @@
+{
+  "name": "@namespace/BS3D",
+  "version": "0.0.1",
+  "dependencies": {
+    "d3": "3.5.17",
+    "d3-force": "2.0.1",
+    "eventemitter3": "4.0.0",
+    "three": "0.112.1",
+    "three.meshline": "1.2.0",
+    "topojson": "3.0.2"
+  },
+  "datav": {
+    "cn_name": "BS 3D",
+    "icon": "",
+    "protocol": 2,
+    "type": [
+      "regular"
+    ],
+    "view": {
+      "width": "800",
+      "height": "600",
+      "minWidth": "300",
+      "minHeight": "200"
+    },
+    "apis": {
+      "groups": {
+        "handler": "render",
+        "description": "要素群组数据接口",
+        "fields": {
+          "entities": {
+            "description": "实体",
+            "type": "array"
+          },
+          "innerLinks": {
+            "description": "要素内部实体联系",
+            "type": "array"
+          }
+        }
+      }
+    },
+    "config": {
+      "handler": "updateOptions",
+      "hexSize": {
+        "name": "正六边形边长",
+        "type": "number",
+        "default": 10,
+        "range": [
+          4,
+          20
+        ],
+        "step": 2
+      },
+      "fontSize": {
+        "name": "字号",
+        "type": "number",
+        "default": 22,
+        "range": [
+          10,
+          100
+        ]
+      },
+      "color": {
+        "name": "颜色",
+        "type": "color",
+        "default": "#ff0a"
+      }
+    },
+    "api_data": {
+      "groups": [
+        {
+          "entities": [
+            {
+              "id": 0,
+              "properties": {}
+            },
+            {
+              "id": 1,
+              "properties": {}
+            },
+            {
+              "id": 2,
+              "properties": {}
+            }
+          ],
+          "innerLinks": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        },
+        {
+          "entities": [
+            {
+              "id": 0,
+              "properties": {}
+            },
+            {
+              "id": 1,
+              "properties": {}
+            },
+            {
+              "id": 2,
+              "properties": {}
+            },
+            {
+              "id": 3,
+              "properties": {}
+            }
+          ],
+          "innerLinks": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
