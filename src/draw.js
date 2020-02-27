@@ -83,6 +83,7 @@ function drawSplineCurve(parent, pts, color = 0xffffff) {
     const geometry = new THREE.BufferGeometry().setFromPoints(points);
     const material = new THREE.LineBasicMaterial({ color });
 
+    console.log(geometry)
     const splineObject = new THREE.Line(geometry, material);
     parent.add(splineObject)
 }

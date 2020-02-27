@@ -119,7 +119,6 @@ class DEMO extends Event {
       // splinePts.push(pt)
     }
 
-    console.log(splinePts)
 
     const splineCurveObj3D = new THREE.Object3D()
     scene.add(splineCurveObj3D)
